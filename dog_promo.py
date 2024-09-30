@@ -1,6 +1,5 @@
 import datetime
 import random
-from collections import OrderedDict
 
 from faker import Faker
 
@@ -18,7 +17,7 @@ with open(filename, 'w') as f:
         is_luck = fake.random_int(min=1, max=100)
         if is_luck > 50:
             amount_promo = fake.random_int(min=1, max=5)
-            id_dog = i
+            id_dog = 70 + i
             for p in range(amount_promo):
                 id_promo = fake.random_int(min=1, max=50)
 
